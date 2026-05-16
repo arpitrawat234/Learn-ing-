@@ -102,3 +102,7 @@ alert( +y ); // -2
 alert( +true ); // 1
 alert( +"" );   // 0
 // effects of + on numbers same as Number
+alert( 0 === false ); // false, because the types are different
+alert( '' == false ); // true
+null==undefined are complementary couples
+"2" > "12" → true dictionary comparison, first char "2" is greater than the first char "1".

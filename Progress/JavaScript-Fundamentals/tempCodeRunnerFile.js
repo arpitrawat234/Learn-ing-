@@ -1,4 +1,4 @@
-let name = alert('Arpit');
+// let name = alert('Arpit');
 
 // let age= prompt('Enter your age','should be a number like 1')
 
