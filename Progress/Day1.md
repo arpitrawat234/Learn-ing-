@@ -4,7 +4,7 @@ Today i am going through the introduction for the javascript tutorial in [Javasc
 
 Here i wrote [hello world](JavaScript-Fundamentals/1-helloworld.html)
 
-## Variables
+
 [variables](JavaScript-Fundamentals\02-variable.js)
 
 | Keyword | Scope    |
@@ -21,7 +21,7 @@ comments */
 
  alert(hello); //semicolons should be norms 
 ````
-## DATATYPES
+## DATATYPES## Variables
 javascript is a dynamically typed language
 
 Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}, for example:

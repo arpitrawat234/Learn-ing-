@@ -55,6 +55,7 @@ if (login == 'Employee') {
 } else {
   message = '';
 }
+
 // rewriting to ?:
 message=(login=='Employee') ? 'Hello':(login=='Director')?'Greetings':(login=='')?'No login':''//here it acts as if else
     
