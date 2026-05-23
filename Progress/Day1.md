@@ -1,8 +1,8 @@
 ### introduction
 
-Today i am going through the introduction for the javascript tutorial in javascript.info
+Today i am going through the introduction for the javascript tutorial in [Javascript.info](htttps://javascript.info)
 
-Here i wrote [hello world](1-helloworld.html)
+Here i wrote [hello world](JavaScript-Fundamentals/1-helloworld.html)
 
 ## Variables
 [variables](JavaScript-Fundamentals\02-variable.js)
@@ -86,7 +86,9 @@ let num = Number(str); // becomes a number 123
 alert(Boolean(5));
 let x= Number(undefined);//gives nan
 console.log(x);
+
 ## Operators
+
 alert( '1' + 2 ); // "12"
 alert( 2 + '1' ); // "21"
 alert('1' + 2 + 2); // "122" and not "14"

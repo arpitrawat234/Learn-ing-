@@ -2,3 +2,4 @@
 
 
 [DAY 1](Progress/Day1.md)
+[DAY 2](Progress/Day2.md)
