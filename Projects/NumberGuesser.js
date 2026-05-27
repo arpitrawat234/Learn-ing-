@@ -73,4 +73,10 @@ alert(usernumber +"---->"+ result.join(" "));// its used to join arrays
 return correct===length
 }
 
-
+//TODO
+/***
+ FIRST INSERT THE VALUE VERIFYING LOGIC
+ SECOND IMPROVE UI
+ REMOVE REPETITION
+ MAKE A DOM HTML GAME
+ ***/
