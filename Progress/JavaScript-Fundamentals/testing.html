@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <script src="../logicaloperator.js"></script> -->
 </head>
 <body>
     <script>
-// let age = prompt("Whats your age")>=18
-// if(age){
-// alert("You can vote")
+        let sum = 0;
 
+while (true) {
+
+  let value = +prompt("Enter a number", '');
+
+  if (!value) break; // (*)
+
+  sum += value;
+
+}
+alert( 'Sum: ' + sum );
     </script>
 </body>
 </html>
