@@ -84,3 +84,49 @@ for (let i = 0; i < 10; i++) {
 ```
 
 break/continue support labels before the loop. A label is the only way for break/continue to escape a nested loop to go to an outer one.
+
+[Functions](./functions.js)
+```
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);
+Here, functions are declared right inside the ask(...) call. They have no name, and so are called anonymous. Such functions are not accessible outside of ask (because they are not assigned to variables), but that’s just what we want here.
+```
+Function Declaration: a function, declared as a separate statement, in the main code flow:
+
+// Function Declaration
+function sum(a, b) {
+  return a + b;
+}
+Function Expression: a function, created inside an expression or inside another syntax construct. Here, the function is created on the right side of the “assignment expression” =:
+
+// Function Expression
+let sum = function(a, b) {
+  return a + b;
+};
+
+```
+let double = n => n * 2;//arrow functions
+// roughly the same as: let double = function(n) { return n * 2 }
+
+alert( double(3) ); // 6
+```
+
+
+Sometimes we need a more complex function, with multiple expressions and statements. In that case, we can enclose them in curly braces. The major difference is that curly braces require a return within them to return a value (just like a regular function does).
+```
+Like this:
+
+let sum = (a, b) => {  // the curly brace opens a multiline function
+  let result = a + b;
+  return result; // if we use curly braces, then we need an explicit "return"
+};
+
+alert( sum(1, 2) ); //3 ```

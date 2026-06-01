@@ -4,11 +4,12 @@
 
 ### 🔹 Core Language
 
-* [ ] Loops (`while`, `for`)
-* [ ] `switch` statement (basic)
-* [ ] Functions
-* [ ] Function expressions
-* [ ] Arrow functions (basic)
+* [x] Loops (`while`, `for`)
+* [x] `switch` statement (basic)
+* [x] Functions
+* [x] Function expressions
+* [x] Arrow functions (basic)
+
 
 ---
 
@@ -25,7 +26,7 @@
 
 ### 🔹 Modern Essentials
 
-* [ ] Nullish coalescing `??`
+* [x] Nullish coalescing `??`
 * [ ] Optional chaining `?.`
 * [ ] Destructuring
 * [ ] Spread & Rest (`...`)
@@ -34,8 +35,8 @@
 
 ### 🔹 Debugging & Quality
 
-* [ ] Debugging in browser (console, breakpoints)
-* [ ] Basic coding style
+* [x] Debugging in browser (console, breakpoints)
+* [x] Basic coding style
 
 ---
 
@@ -52,7 +53,7 @@
 ### 🔹 Functions Deep Dive
 
 * [ ] Closures
-* [ ] Scope
+* [x] Scope
 * [ ] `setTimeout`, `setInterval`
 * [ ] Function binding (`bind`, `call`, `apply`)
 

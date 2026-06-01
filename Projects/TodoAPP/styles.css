@@ -1,0 +1,115 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Body styling */
+body {
+background: #EEAECA;
+background: linear-gradient(227deg, rgba(238, 174, 202, 1) 0%, rgba(205, 179, 213, 1) 36%, rgba(191, 181, 218, 1) 51%, rgba(148, 187, 233, 1) 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App container */
+.app {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.app h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-section input,
+.input-section textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-section input:focus,
+.input-section textarea:focus {
+  border-color: #667eea;
+}
+
+/* Button */
+.input-section button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-section button:hover {
+  background: #5a67d8;
+}
+
+/* Task list */
+.task-list {
+  margin-top: 20px;
+  list-style: none;
+}
+
+/* Task item */
+.task-item {
+  background: #f5f7ff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.task-item:hover {
+  background: #e0e7ff;
+}
+
+/* Task text */
+.task-text {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Notes */
+.notes-text {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+.notesbutton {
+  padding: 6px 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #94BBE9;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}

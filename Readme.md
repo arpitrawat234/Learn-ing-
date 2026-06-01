@@ -1,4 +1,7 @@
 ### 👋 Hey there! I am here to act as a list of my everyday learnign and what i learned today.
 
 [DAY 1](Progress/Day1.md)
+
 [DAY 2](Progress/Day2.md)
+
+[DAY 3](Progress/Day3.md)
