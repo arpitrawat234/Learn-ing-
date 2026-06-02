@@ -77,14 +77,10 @@ background: linear-gradient(227deg, rgba(238, 174, 202, 1) 0%, rgba(205, 179, 21
 
 /* Task item */
 .task-item {
-  background: #f5f7ff;
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-
 .task-item:hover {
   background: #e0e7ff;
 }
@@ -93,6 +89,7 @@ background: linear-gradient(227deg, rgba(238, 174, 202, 1) 0%, rgba(205, 179, 21
 .task-text {
   font-weight: 600;
   color: #333;
+  flex: 1; /* THIS is critical */
 }
 
 /* Notes */
@@ -102,7 +99,7 @@ background: linear-gradient(227deg, rgba(238, 174, 202, 1) 0%, rgba(205, 179, 21
   color: #666;
   line-height: 1.4;
 }
-.notesbutton {
+.delete-button {
   padding: 6px 12px;
   margin-top: 8px;
   border: none;
@@ -112,4 +109,27 @@ background: linear-gradient(227deg, rgba(238, 174, 202, 1) 0%, rgba(205, 179, 21
   font-size: 12px;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+.edit-button{
+  padding: 6px 12px;
+  margin-top: 8px;
+  margin-left: auto;
+  border: none;
+  border-radius: 6px;
+  background: #94BBE9;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
 }

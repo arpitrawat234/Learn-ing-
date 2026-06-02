@@ -11,7 +11,10 @@
     <h1>Todo App</h1>
     <!-- Input Section -->
     <div class="input-section">
-      <input type="text" placeholder="Enter task..." />
+      <input type="text" maxlength="20" placeholder="Enter task..." />
+      <small class="char-count">0 / 20</small>
+      <small class="error-msg"></small>
+     
       <textarea placeholder="Add notes..."></textarea>
       <button>Add Task</button>
     </div>
