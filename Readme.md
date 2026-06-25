@@ -4,4 +4,4 @@
 
 [DAY 2](Progress/Day2.md)
 
-[DAY 3](Progress/Day3.md)
+[DAY 3](Progress/Day3.md
