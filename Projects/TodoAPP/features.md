@@ -3,7 +3,7 @@ What it does
 - delete todo
 - add todo
 - open up the notes
-
+- using array as state
 today features 
 
 - edit the todo
