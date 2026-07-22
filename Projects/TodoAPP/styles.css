@@ -13,78 +13,54 @@ body {
     justify-content: center;
     align-items: center;
 
-    font-family: "Segoe UI", sans-serif;
+    background: #0d1117; /* GitHub dark */
+    color: #e6edf3;
 
-    background: linear-gradient(
-        227deg,
-        #eeaeca 0%,
-        #cdb3d5 36%,
-        #bfb5da 51%,
-        #94bbe9 100%
-    );
+    font-family: "Inter", "Segoe UI", sans-serif;
 
-    padding: 20px;
+    padding: 24px;
 }
 
 /* Main Card */
 .container {
-    width: 500px;
+    width: 550px;
     max-width: 95vw;
 
-    background: rgba(255, 255, 255, 0.9);
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
 
-    backdrop-filter: blur(10px);
+    padding: 28px;
 
-    border-radius: 20px;
-
-    padding: 30px;
-
-    box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
 }
-
 h1 {
-    text-align: center;
-
-    color: #444;
-
-    margin-bottom: 25px;
+    color: #f0f6fc;
+    font-size: 30px;
+    margin-bottom: 24px;
 }
-
 /* Form */
 .todo-form {
     display: flex;
     flex-direction: column;
-
     gap: 12px;
 }
-
 .todo-form input,
 .todo-form textarea {
-    width: 100%;
+    background: #0d1117;
+    color: #e6edf3;
+
+    border: 1px solid #30363d;
+    border-radius: 8px;
 
     padding: 12px;
-
-    border: 2px solid #ddd;
-
-    border-radius: 12px;
-
-    outline: none;
-
-    font-size: 15px;
-
-    transition: 0.2s;
 }
 
 .todo-form input:focus,
 .todo-form textarea:focus {
-    border-color: #94bbe9;
+    border-color: #58a6ff;
+    outline: none;
 }
-
-.todo-form textarea {
-    resize: vertical;
-}
-
 /* Counter */
 .char-count {
     font-size: 14px;
@@ -101,35 +77,20 @@ h1 {
 
 /* Add Button */
 .addbutton {
-    padding: 12px;
-
-    border: none;
-
-    border-radius: 12px;
-
-    background: linear-gradient(
-        135deg,
-        #eeaeca,
-        #94bbe9
-    );
-
+    background: #238636;
     color: white;
 
-    font-size: 15px;
-    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px;
 
     cursor: pointer;
-
-    transition: 0.2s;
 }
 
 .addbutton:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 10px 20px rgba(148, 187, 233, 0.3);
+    background: #2ea043;
 }
-
 .addbutton:disabled {
     opacity: 0.6;
     cursor: not-allowed;
@@ -150,92 +111,58 @@ h1 {
 /* Todo Card */
 .task-item {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
+    gap: 12px;
 
-    padding: 14px;
+    padding: 16px 0;
 
-    border-radius: 14px;
-
-    background: rgba(255, 255, 255, 0.85);
-
-    border: 1px solid rgba(148, 187, 233, 0.3);
-
-    transition: 0.2s;
+    border-bottom: 1px solid #30363d;
 }
 
-.task-item:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 10px 20px rgba(0, 0, 0, 0.08);
-}
-
-/* Content */
-.content {
+/* Content */   
+.todo-content {
     flex: 1;
-
     display: flex;
     flex-direction: column;
 }
-
 .task-text {
-    font-weight: 700;
-
-    color: #444;
-
-    font-size: 16px;
+    color: #f0f6fc;
+    font-weight: 500;
 }
 
 .notes-text {
-    margin-top: 8px;
-
-    color: #666;
-
-    line-height: 1.5;
-
-    font-size: 14px;
+    color: #8b949e;
 }
 
 /* Buttons */
-.actions {
-    display: flex;
-
-    gap: 8px;
-
-    margin-left: 15px;
-}
 
 .edit-button,
 .delete-button {
-    border: none;
+    background: transparent;
+    color: #8b949e;
 
-    border-radius: 8px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
 
-    padding: 8px 14px;
-
-    color: white;
-
-    cursor: pointer;
-
-    transition: 0.2s;
+    padding: 6px 10px;
 }
 
-.edit-button {
-    background: #cdb3d5;
-}
-
-.edit-button:hover {
-    background: #b89fc5;
-}
-
-.delete-button {
-    background: #94bbe9;
-}
-
+.edit-button:hover,
 .delete-button:hover {
-    background: #7aa9df;
+    background: #21262d;
+    color: white;
 }
 .hidden {
     display: none;
+}
+.completed {
+    color: #8b949e;
+    text-decoration: line-through;
+}
+.done-checkbox {
+    width: 18px;
+    height: 18px;
+
+    accent-color: #238636;
+    cursor: pointer;
 }

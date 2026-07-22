@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "active": true,
+      "roles": ["admin", "editor"],
+      "profile": {
+        "email": "alice@example.com",
+        "age": 30,
+        "location": "New York"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "active": false,
+      "roles": ["viewer"],
+      "profile": {
+        "email": "bob@example.com",
+        "age": 25,
+        "location": "Berlin"
+      }
+    }
+  ],
+  "settings": {
+    "theme": "light",
+    "language": "en",
+    "notifications": {
+      "email": true,
+      "sms": false,
+      "push": true
+    }
+  },
+  "logs": [
+    {
+      "timestamp": "2025-12-01T08:30:00Z",
+      "event": "login",
+      "userId": 1
+    },
+    {
+      "timestamp": "2025-12-01T09:15:00Z",
+      "event": "data_export",
+      "userId": 1
+    }
+  ]
+}

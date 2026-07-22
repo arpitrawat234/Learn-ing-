@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    font-family: "Inter", sans-serif;
+    color: #f8fafc;
+    padding: 24px;
+}
+
+.card {
+    width: min(600px, 90%);
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.35);
+    text-align: center;
+}
+
+.card h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#quoteBtn {
+    border: none;
+    outline: none;
+
+    background: #3b82f6;
+    color: white;
+
+    padding: 12px 24px;
+    border-radius: 10px;
+
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+#quoteBtn:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+#quoteBtn:active {
+    transform: scale(.97);
+}
+
+#quote_body {
+    margin-top: 2rem;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.7;
+
+    font-style: italic;
+}
+
+#quote_body::before {
+    content: "❝ ";
+}
+
+#quote_body::after {
+    content: " ❞";
+}
+
+#author {
+    margin-top: 1.5rem;
+
+    font-size: 1rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+#author::before {
+    content: "— ";
+}
