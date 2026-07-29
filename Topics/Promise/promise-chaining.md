@@ -102,3 +102,6 @@ Promise
 * `return value` → next `.then(value)`.
 * `return Promise` → next `.then()` waits.
 * Use `.catch()` at the end to handle errors in the chain.
+
+
+https://javascript.info/promisify

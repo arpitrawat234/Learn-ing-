@@ -1,0 +1,1 @@
+.catch(error=>console.log("Wrong Url")); // catches handles error
