@@ -135,8 +135,9 @@ const moves = history.map((game, move) => {
   let description;
 
     const row = Math.floor(game.index / 3);
+    console.log(row);
     const col = game.index % 3;
-    const user = move % 2 === 0 ? "" : (move % 2 === 1 ? "X" : "O");
+    const user = move % 2 === 1 ? "X" : "O";
     description = `Go to move ${move} (${row}, ${col}) by ${user}`;
 
 
