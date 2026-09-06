@@ -179,7 +179,7 @@ const moves = history.map((game, move) => {
 }
 
 
-// This function calculate winner
+// This function calculate winner 
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
